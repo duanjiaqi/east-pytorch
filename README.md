@@ -49,30 +49,5 @@ Please cite his [paper](https://arxiv.org/abs/1704.03155v2) if you find this use
 2. pretrained  
 + In config.py set resume True and set checkpoint path/to/weight/file
 
-### Train
-If you want to train the model, you should provide the dataset path in config.py, in the dataset path, a separate gt text file should be provided for each image
-and run
-
-```
-sh run.py
-```
-**Note: you should modify run.sh to specify your gpu id
-
-If you have more than one gpu, you can pass gpu ids to gpu_list(like gpu_list=0,1,2,3) in config.py
-
-**Note: you should change the gt text file of icdar2015's filename to img_\*.txt instead of gt_img_\*.txt(or you can change the code in icdar.py), and some extra characters should be removed from the file.
-See the examples in training_samples/**
-
-### Test
-By default, we set train-eval process into integer.
-If you want to use eval independently, you can do it by yourself. Any question can contact me.
-
-### Examples
-Here are some test examples on icdar2015, enjoy the beautiful text boxes!
-![image_1](demo_images/img_2.jpg)
-![image_2](demo_images/img_10.jpg)
-![image_3](demo_images/img_14.jpg)
-![image_4](demo_images/img_26.jpg)
-![image_5](demo_images/img_75.jpg)
 
 
